@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Search, ShoppingCart, User, Menu } from "lucide-react"
+import { Search, ShoppingCart, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -15,6 +15,16 @@ export function SiteHeader() {
             </div>
             <span className="font-bold text-xl hidden sm:inline-block text-card">SparkMakit</span>
           </Link>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-6">
+            <Link href="/products" className="text-sm font-medium text-card hover:text-primary transition-colors">
+              Products
+            </Link>
+            <Link href="/about" className="text-sm font-medium text-card hover:text-primary transition-colors">
+              About Us
+            </Link>
+          </nav>
 
           {/* Search Bar */}
           <div className="flex-1 max-w-xl hidden md:flex">
@@ -39,9 +49,7 @@ export function SiteHeader() {
                 Admin Login
               </Button>
             </Link>
-            <Link href="/login">
-              
-            </Link>
+            <Link href="/login"></Link>
             <Link href="/cart">
               <Button variant="ghost" size="icon" className="relative text-card bg-primary">
                 <ShoppingCart className="h-5 w-5" />

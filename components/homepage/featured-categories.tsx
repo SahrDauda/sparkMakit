@@ -3,33 +3,33 @@ import { Card } from "@/components/ui/card"
 
 const categories = [
   {
-    name: "Textiles & Fabrics",
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
+    name: "Electronics",
+    image: "/placeholder.svg?height=300&width=300",
     count: 234,
   },
   {
-    name: "Jewelry & Accessories",
-    image: "/african-jewelry-beaded-accessories.jpg",
-    count: 189,
-  },
-  {
-    name: "Art & Sculptures",
-    image: "/african-art-wooden-sculptures-masks.jpg",
-    count: 156,
-  },
-  {
-    name: "Home Decor",
-    image: "/african-home-decor-baskets-pottery.jpg",
-    count: 298,
-  },
-  {
-    name: "Fashion & Clothing",
-    image: "/african-fashion-traditional-clothing.jpg",
+    name: "Fashion",
+    image: "/placeholder.svg?height=300&width=300",
     count: 412,
   },
   {
-    name: "Beauty & Wellness",
-    image: "/african-beauty-products-natural-skincare.jpg",
+    name: "Jewelry",
+    image: "/placeholder.svg?height=300&width=300",
+    count: 189,
+  },
+  {
+    name: "Accessories",
+    image: "/placeholder.svg?height=300&width=300",
+    count: 298,
+  },
+  {
+    name: "Home & Kitchen",
+    image: "/placeholder.svg?height=300&width=300",
+    count: 356,
+  },
+  {
+    name: "Sports & Fitness",
+    image: "/placeholder.svg?height=300&width=300",
     count: 167,
   },
 ]
@@ -40,12 +40,12 @@ export function FeaturedCategories() {
       <div className="space-y-8">
         <div className="text-center space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold text-balance">Shop by Category</h2>
-          <p className="text-muted-foreground text-lg">Explore our diverse collection of authentic African products</p>
+          <p className="text-muted-foreground text-lg">Explore our diverse collection of quality products</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {categories.map((category) => (
-            <Link key={category.name} href={`/category/${category.name.toLowerCase().replace(/\s+/g, "-")}`}>
+            <Link key={category.name} href={`/products?category=${category.name}`}>
               <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer">
                 <div className="aspect-square relative overflow-hidden">
                   <img
