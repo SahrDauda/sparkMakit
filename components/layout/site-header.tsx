@@ -11,9 +11,9 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">A</span>
+              <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
-            <span className="font-bold text-xl hidden sm:inline-block">AfriMarket</span>
+            <span className="font-bold text-xl hidden sm:inline-block">Marketplace</span>
           </Link>
 
           {/* Search Bar */}
