@@ -50,7 +50,7 @@ export function SiteHeader() {
                 </span>
               </Button>
             </Link>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button variant="ghost" size="icon" className="md:hidden text-card bg-accent">
               <Menu className="h-5 w-5" />
             </Button>
           </div>

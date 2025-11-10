@@ -31,31 +31,7 @@ export function SiteFooter() {
           </div>
 
           {/* Shop */}
-          <div>
-            <h3 className="font-semibold mb-4">Shop</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  All Products
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Categories
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Vendors
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  New Arrivals
-                </Link>
-              </li>
-            </ul>
-          </div>
+          
 
           {/* Support */}
           <div>
@@ -85,31 +61,7 @@ export function SiteFooter() {
           </div>
 
           {/* Sell */}
-          <div>
-            <h3 className="font-semibold mb-4">Sell With Us</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Become a Vendor
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Vendor Portal
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Seller Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Pricing
-                </Link>
-              </li>
-            </ul>
-          </div>
+          
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
