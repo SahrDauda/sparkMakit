@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Heart, ShoppingCart, Star, ChevronLeft, ChevronRight } from "lucide-react"
 import { products } from "@/lib/mock-data"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 
 interface CategoryProductsProps {
   category: string
@@ -15,20 +15,49 @@ interface CategoryProductsProps {
 
 export function CategoryProducts({ category, title }: CategoryProductsProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
 
   const categoryProducts = products.filter((product) => product.category === category)
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640)
+    }
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
   const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 400
-      const newScrollPosition =
-        scrollContainerRef.current.scrollLeft + (direction === "left" ? -scrollAmount : scrollAmount)
+    if (isMobile) {
+      if (direction === "left") {
+        setCurrentIndex((prev) => Math.max(0, prev - 1))
+      } else {
+        setCurrentIndex((prev) => Math.min(categoryProducts.length - 1, prev + 1))
+      }
+    } else {
+      if (scrollContainerRef.current) {
+        const scrollAmount = 400
+        const newScrollPosition =
+          scrollContainerRef.current.scrollLeft + (direction === "left" ? -scrollAmount : scrollAmount)
+        scrollContainerRef.current.scrollTo({
+          left: newScrollPosition,
+          behavior: "smooth",
+        })
+      }
+    }
+  }
+
+  useEffect(() => {
+    if (isMobile && scrollContainerRef.current) {
+      const cardWidth = scrollContainerRef.current.offsetWidth
       scrollContainerRef.current.scrollTo({
-        left: newScrollPosition,
+        left: currentIndex * cardWidth,
         behavior: "smooth",
       })
     }
-  }
+  }, [currentIndex, isMobile])
 
   if (categoryProducts.length === 0) return null
 
@@ -41,10 +70,20 @@ export function CategoryProducts({ category, title }: CategoryProductsProps) {
             <p className="text-muted-foreground">Browse our {category.toLowerCase()} collection</p>
           </div>
           <div className="flex items-center gap-2">
-            <Button variant="outline" size="icon" onClick={() => scroll("left")} className="hidden sm:flex">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => scroll("left")}
+              disabled={isMobile && currentIndex === 0}
+            >
               <ChevronLeft className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="icon" onClick={() => scroll("right")} className="hidden sm:flex">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => scroll("right")}
+              disabled={isMobile && currentIndex === categoryProducts.length - 1}
+            >
               <ChevronRight className="h-4 w-4" />
             </Button>
           </div>
@@ -52,13 +91,13 @@ export function CategoryProducts({ category, title }: CategoryProductsProps) {
 
         <div
           ref={scrollContainerRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4"
+          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {categoryProducts.map((product) => (
             <Card
               key={product.id}
-              className="group flex-shrink-0 w-[280px] overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="group flex-shrink-0 w-full sm:w-[280px] overflow-hidden hover:shadow-lg transition-all duration-300 snap-center"
             >
               <div className="relative aspect-square overflow-hidden bg-muted">
                 <img
@@ -116,6 +155,21 @@ export function CategoryProducts({ category, title }: CategoryProductsProps) {
             </Card>
           ))}
         </div>
+
+        {isMobile && (
+          <div className="flex justify-center gap-2">
+            {categoryProducts.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-2 rounded-full transition-all ${
+                  index === currentIndex ? "w-8 bg-primary" : "w-2 bg-primary/30"
+                }`}
+                aria-label={`Go to product ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
 
         <div className="text-center">
           <Link href={`/products?category=${category}`}>
