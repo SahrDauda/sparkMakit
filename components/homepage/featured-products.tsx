@@ -50,7 +50,7 @@ export function FeaturedProducts() {
 
               <CardContent className="p-4 space-y-3">
                 <div className="space-y-1">
-                  <Link href={`/product/${product.id}`}>
+                  <Link href={`/products/${product.id}`}>
                     <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-1">
                       {product.name}
                     </h3>

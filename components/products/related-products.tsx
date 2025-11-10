@@ -4,9 +4,17 @@ import { Button } from "@/components/ui/button"
 import { Star, ShoppingCart } from "lucide-react"
 import { products } from "@/lib/mock-data"
 
-export function RelatedProducts() {
-  // Take 4 random products for related section
-  const relatedProducts = products.slice(1, 5)
+interface RelatedProductsProps {
+  currentProductId: string
+  category?: string
+}
+
+export function RelatedProducts({ currentProductId, category }: RelatedProductsProps) {
+  // Filter products by category if available, exclude current product
+  const relatedProducts = products
+    .filter((p) => p.id !== currentProductId && (!category || p.category === category))
+    .slice(0, 4)
+  // </CHANGE>
 
   return (
     <section className="space-y-6">

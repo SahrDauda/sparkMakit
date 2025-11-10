@@ -11,7 +11,8 @@ const reviews = [
     author: "Sarah M.",
     rating: 5,
     date: "2 weeks ago",
-    comment: "Absolutely beautiful! The colors are even more vibrant in person. Great quality and fast shipping.",
+    comment:
+      "Excellent product! Exceeded my expectations in quality and performance. Highly recommend to anyone looking for this type of item.",
     verified: true,
   },
   {
@@ -19,7 +20,7 @@ const reviews = [
     author: "James K.",
     rating: 5,
     date: "1 month ago",
-    comment: "Purchased this as a gift and it was a huge hit. The craftsmanship is exceptional.",
+    comment: "Great purchase! Arrived quickly and exactly as described. Very satisfied with this vendor.",
     verified: true,
   },
   {
@@ -27,16 +28,22 @@ const reviews = [
     author: "Maria L.",
     rating: 4,
     date: "1 month ago",
-    comment: "Love the design and quality. Took a bit longer to arrive than expected but worth the wait.",
+    comment: "Good quality product. Works as expected. Would buy from this seller again.",
     verified: true,
   },
 ]
 
-export function ProductTabs() {
+interface ProductTabsProps {
+  product: {
+    reviews: number
+  }
+}
+
+export function ProductTabs({ product }: ProductTabsProps) {
   return (
     <Tabs defaultValue="reviews" className="w-full">
       <TabsList className="w-full justify-start">
-        <TabsTrigger value="reviews">Reviews (45)</TabsTrigger>
+        <TabsTrigger value="reviews">Reviews ({product.reviews})</TabsTrigger>
         <TabsTrigger value="shipping">Shipping & Returns</TabsTrigger>
         <TabsTrigger value="care">Care Instructions</TabsTrigger>
       </TabsList>

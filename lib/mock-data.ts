@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: "1",
     name: "Wireless Bluetooth Headphones",
     vendor: "TechGear Store",
     price: 79.99,
@@ -9,9 +9,13 @@ export const products = [
     reviews: 124,
     image: "/wireless-bluetooth-headphones.jpg",
     badge: "Sale",
+    category: "Electronics",
+    description:
+      "Premium wireless headphones with active noise cancellation, 30-hour battery life, and crystal-clear audio quality. Perfect for music lovers and professionals who demand the best sound experience.",
+    stock: 45,
   },
   {
-    id: 2,
+    id: "2",
     name: "Leather Laptop Bag",
     vendor: "Premium Accessories",
     price: 89.0,
@@ -19,18 +23,26 @@ export const products = [
     reviews: 87,
     image: "/leather-laptop-bag-brown.jpg",
     badge: "Bestseller",
+    category: "Accessories",
+    description:
+      "Handcrafted genuine leather laptop bag with multiple compartments. Fits laptops up to 15.6 inches. Durable, stylish, and perfect for professionals on the go.",
+    stock: 23,
   },
   {
-    id: 3,
+    id: "3",
     name: "Stainless Steel Water Bottle",
     vendor: "EcoLife Essentials",
     price: 24.99,
     rating: 4.7,
     reviews: 203,
     image: "/stainless-steel-bottle.png",
+    category: "Home & Kitchen",
+    description:
+      "Double-walled insulated water bottle keeps drinks cold for 24 hours or hot for 12 hours. BPA-free and eco-friendly. Perfect for gym, office, or outdoor activities.",
+    stock: 156,
   },
   {
-    id: 4,
+    id: "4",
     name: "Smart Fitness Watch",
     vendor: "TechGear Store",
     price: 149.0,
@@ -39,9 +51,13 @@ export const products = [
     reviews: 156,
     image: "/smart-fitness-watch-black.jpg",
     badge: "New",
+    category: "Electronics",
+    description:
+      "Track your fitness goals with this advanced smartwatch. Features heart rate monitoring, GPS, sleep tracking, and 7-day battery life. Water-resistant and compatible with iOS and Android.",
+    stock: 67,
   },
   {
-    id: 5,
+    id: "5",
     name: "Organic Cotton T-Shirt",
     vendor: "Green Threads",
     price: 29.99,
@@ -49,18 +65,26 @@ export const products = [
     reviews: 312,
     image: "/organic-cotton-t-shirt.jpg",
     badge: "Bestseller",
+    category: "Clothing",
+    description:
+      "Soft, breathable organic cotton t-shirt. Sustainably sourced and ethically made. Available in multiple colors and sizes. Perfect for everyday wear.",
+    stock: 234,
   },
   {
-    id: 6,
+    id: "6",
     name: "Bamboo Desk Organizer",
     vendor: "EcoLife Essentials",
     price: 34.5,
     rating: 4.7,
     reviews: 89,
     image: "/bamboo-desk-organizer.jpg",
+    category: "Home & Kitchen",
+    description:
+      "Eco-friendly bamboo desk organizer with multiple compartments for pens, pencils, and office supplies. Sleek design that fits any workspace aesthetic.",
+    stock: 78,
   },
   {
-    id: 7,
+    id: "7",
     name: "Professional Chef Knife Set",
     vendor: "Kitchen Masters",
     price: 129.99,
@@ -68,9 +92,13 @@ export const products = [
     reviews: 67,
     image: "/professional-chef-knife-set.jpg",
     badge: "New",
+    category: "Home & Kitchen",
+    description:
+      "Premium 8-piece chef knife set with high-carbon stainless steel blades. Includes chef knife, paring knife, utility knife, and more. Comes with a wooden storage block.",
+    stock: 34,
   },
   {
-    id: 8,
+    id: "8",
     name: "Yoga Mat with Carrying Strap",
     vendor: "FitLife Pro",
     price: 39.99,
@@ -79,18 +107,26 @@ export const products = [
     reviews: 178,
     image: "/yoga-mat-purple.jpg",
     badge: "Sale",
+    category: "Sports & Fitness",
+    description:
+      "Non-slip yoga mat with extra cushioning. Made from eco-friendly TPE material. Includes carrying strap and storage bag. Perfect for yoga, pilates, and general fitness.",
+    stock: 89,
   },
   {
-    id: 9,
+    id: "9",
     name: "Portable Phone Charger 20000mAh",
     vendor: "TechGear Store",
     price: 45.99,
     rating: 4.8,
     reviews: 234,
     image: "/portable-phone-charger-powerbank.jpg",
+    category: "Electronics",
+    description:
+      "High-capacity portable charger with dual USB ports and fast charging technology. Can charge most phones 4-5 times. LED display shows remaining battery. TSA-approved for air travel.",
+    stock: 123,
   },
   {
-    id: 10,
+    id: "10",
     name: "Ceramic Coffee Mug Set",
     vendor: "Home Essentials Co",
     price: 32.0,
@@ -98,9 +134,13 @@ export const products = [
     reviews: 145,
     image: "/ceramic-coffee-mugs-colorful.jpg",
     badge: "Bestseller",
+    category: "Home & Kitchen",
+    description:
+      "Set of 4 handcrafted ceramic coffee mugs. Each holds 12oz. Microwave and dishwasher safe. Beautiful glazed finish in assorted colors. Makes a great gift.",
+    stock: 67,
   },
   {
-    id: 11,
+    id: "11",
     name: "Running Shoes - Men's",
     vendor: "FitLife Pro",
     price: 89.99,
@@ -109,15 +149,23 @@ export const products = [
     reviews: 267,
     image: "/running-shoes-mens-athletic.jpg",
     badge: "Sale",
+    category: "Sports & Fitness",
+    description:
+      "Lightweight running shoes with responsive cushioning and breathable mesh upper. Durable rubber outsole provides excellent traction. Available in multiple sizes and colors.",
+    stock: 45,
   },
   {
-    id: 12,
+    id: "12",
     name: "Scented Candle Gift Set",
     vendor: "Home Essentials Co",
     price: 44.99,
     rating: 4.9,
     reviews: 198,
     image: "/scented-candles-gift-set.jpg",
+    category: "Home & Kitchen",
+    description:
+      "Luxury scented candle set with 6 unique fragrances. Made from natural soy wax with lead-free cotton wicks. Burns for 25-30 hours each. Beautifully packaged for gifting.",
+    stock: 56,
   },
 ]
 

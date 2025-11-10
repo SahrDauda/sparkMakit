@@ -29,6 +29,16 @@ export function SiteHeader() {
             <Button variant="ghost" size="icon" className="md:hidden">
               <Search className="h-5 w-5" />
             </Button>
+            <Link href="/vendor/login" className="hidden lg:inline-block">
+              <Button variant="outline" size="sm" className="bg-transparent">
+                Vendor Login
+              </Button>
+            </Link>
+            <Link href="/admin/login" className="hidden lg:inline-block">
+              <Button variant="outline" size="sm" className="bg-transparent">
+                Admin Login
+              </Button>
+            </Link>
             <Link href="/login">
               <Button variant="ghost" size="icon">
                 <User className="h-5 w-5" />

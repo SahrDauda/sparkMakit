@@ -5,15 +5,35 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Heart, ShoppingCart, Star, Truck, Shield, RotateCcw } from "lucide-react"
 
-export function ProductInfo() {
+interface ProductInfoProps {
+  product: {
+    name: string
+    price: number
+    originalPrice?: number
+    rating: number
+    reviews: number
+    badge?: string
+    description: string
+    stock: number
+  }
+}
+
+export function ProductInfo({ product }: ProductInfoProps) {
+  // </CHANGE>
   const [quantity, setQuantity] = useState(1)
+
+  const discountPercent = product.originalPrice
+    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+    : 0
+  // </CHANGE>
 
   return (
     <div className="space-y-6">
       {/* Title and Rating */}
       <div className="space-y-3">
         <div className="flex items-start justify-between gap-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-balance">Kente Cloth Runner</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-balance">{product.name}</h1>
+          {/* </CHANGE> */}
           <Button variant="ghost" size="icon">
             <Heart className="h-5 w-5" />
           </Button>
@@ -22,44 +42,44 @@ export function ProductInfo() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
             {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} className="h-5 w-5 fill-primary text-primary" />
+              <Star
+                key={star}
+                className={`h-5 w-5 ${star <= Math.round(product.rating) ? "fill-primary text-primary" : "text-muted-foreground"}`}
+              />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">4.9 (45 reviews)</span>
+          <span className="text-sm text-muted-foreground">
+            {product.rating} ({product.reviews} reviews)
+          </span>
+          {/* </CHANGE> */}
         </div>
 
-        <Badge className="w-fit">Bestseller</Badge>
+        {product.badge && <Badge className="w-fit">{product.badge}</Badge>}
+        {/* </CHANGE> */}
       </div>
 
       {/* Price */}
       <div className="space-y-2">
         <div className="flex items-center gap-3">
-          <span className="text-3xl font-bold">${89.99}</span>
-          <span className="text-xl text-muted-foreground line-through">${120.0}</span>
-          <Badge variant="destructive">25% OFF</Badge>
+          <span className="text-3xl font-bold">${product.price.toFixed(2)}</span>
+          {product.originalPrice && (
+            <>
+              <span className="text-xl text-muted-foreground line-through">${product.originalPrice.toFixed(2)}</span>
+              <Badge variant="destructive">{discountPercent}% OFF</Badge>
+            </>
+          )}
+          {/* </CHANGE> */}
         </div>
         <p className="text-sm text-muted-foreground">Tax included. Shipping calculated at checkout.</p>
+        <p className="text-sm font-medium text-primary">{product.stock} items in stock</p>
+        {/* </CHANGE> */}
       </div>
 
       {/* Description */}
       <div className="space-y-2">
         <h3 className="font-semibold">Description</h3>
-        <p className="text-muted-foreground leading-relaxed">
-          Authentic handwoven Kente cloth runner featuring traditional Ghanaian patterns and vibrant colors. Each piece
-          is meticulously crafted by skilled artisans using time-honored techniques passed down through generations.
-          Perfect for adding a touch of African heritage to your home decor.
-        </p>
-      </div>
-
-      {/* Product Details */}
-      <div className="space-y-2">
-        <h3 className="font-semibold">Product Details</h3>
-        <ul className="space-y-1 text-sm text-muted-foreground">
-          <li>• Dimensions: 72" x 14"</li>
-          <li>• Material: 100% Cotton</li>
-          <li>• Origin: Accra, Ghana</li>
-          <li>• Care: Hand wash cold, lay flat to dry</li>
-        </ul>
+        <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+        {/* </CHANGE> */}
       </div>
 
       {/* Quantity Selector */}
@@ -70,7 +90,7 @@ export function ProductInfo() {
             -
           </Button>
           <span className="w-12 text-center font-medium">{quantity}</span>
-          <Button variant="outline" size="icon" onClick={() => setQuantity(quantity + 1)}>
+          <Button variant="outline" size="icon" onClick={() => setQuantity(Math.min(product.stock, quantity + 1))}>
             +
           </Button>
         </div>
