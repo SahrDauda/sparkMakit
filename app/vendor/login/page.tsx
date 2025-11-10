@@ -1,10 +1,19 @@
 import { LoginForm } from "@/components/auth/login-form"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
 
 export default function VendorLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-muted/30">
       <div className="w-full max-w-md space-y-6">
+        <Link href="/">
+          <Button variant="ghost" size="sm" className="mb-4">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Homepage
+          </Button>
+        </Link>
+
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold">Vendor Portal</h1>
           <p className="text-muted-foreground">Sign in to manage your store</p>

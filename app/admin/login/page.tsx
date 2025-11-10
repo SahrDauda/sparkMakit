@@ -1,11 +1,19 @@
 import { LoginForm } from "@/components/auth/login-form"
 import Link from "next/link"
-import { Shield } from "lucide-react"
+import { Shield, ArrowLeft } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function AdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-muted/30">
       <div className="w-full max-w-md space-y-6">
+        <Link href="/">
+          <Button variant="ghost" size="sm" className="mb-4">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Homepage
+          </Button>
+        </Link>
+
         <div className="text-center space-y-2">
           <div className="flex justify-center">
             <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
