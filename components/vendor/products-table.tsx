@@ -5,45 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Edit, Trash2, MoreVertical } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { products as allProducts } from "@/lib/mock-data"
 
-const products = [
-  {
-    id: 1,
-    name: "Kente Cloth Runner",
-    price: 89.99,
-    stock: 12,
-    status: "active",
-    sales: 45,
-    image: "/kente-cloth-colorful-african-textile.jpg",
-  },
-  {
-    id: 2,
-    name: "Mudcloth Pillow Cover",
-    price: 42.0,
-    stock: 8,
-    status: "active",
-    sales: 38,
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
-  },
-  {
-    id: 3,
-    name: "Batik Wall Hanging",
-    price: 95.0,
-    stock: 3,
-    status: "low-stock",
-    sales: 29,
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
-  },
-  {
-    id: 4,
-    name: "Woven Table Runner",
-    price: 55.0,
-    stock: 0,
-    status: "out-of-stock",
-    sales: 15,
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
-  },
-]
+const products = allProducts.slice(0, 4).map((product, index) => ({
+  ...product,
+  stock: [12, 8, 3, 0][index],
+  status: ["active", "active", "low-stock", "out-of-stock"][index] as "active" | "low-stock" | "out-of-stock",
+  sales: [45, 38, 29, 15][index],
+}))
 
 export function ProductsTable() {
   return (

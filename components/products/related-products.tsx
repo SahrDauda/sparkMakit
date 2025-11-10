@@ -2,47 +2,12 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, ShoppingCart } from "lucide-react"
-
-const relatedProducts = [
-  {
-    id: 2,
-    name: "Maasai Beaded Necklace",
-    vendor: "Maasai Beadwork",
-    price: 45.0,
-    rating: 5.0,
-    reviews: 32,
-    image: "/maasai-beaded-necklace-colorful-traditional.jpg",
-  },
-  {
-    id: 6,
-    name: "Mudcloth Pillow Cover",
-    vendor: "Adinkra Crafts",
-    price: 42.0,
-    rating: 4.8,
-    reviews: 67,
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
-  },
-  {
-    id: 9,
-    name: "Batik Wall Hanging",
-    vendor: "Adinkra Crafts",
-    price: 95.0,
-    rating: 4.7,
-    reviews: 34,
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
-  },
-  {
-    id: 4,
-    name: "Ankara Print Dress",
-    vendor: "Sahara Textiles",
-    price: 75.0,
-    rating: 4.7,
-    reviews: 56,
-    image: "/ankara-print-dress-african-fashion-colorful.jpg",
-  },
-]
+import { products } from "@/lib/mock-data"
 
 export function RelatedProducts() {
+  // Take 4 random products for related section
+  const relatedProducts = products.slice(1, 5)
+
   return (
     <section className="space-y-6">
       <h2 className="text-2xl md:text-3xl font-bold">You May Also Like</h2>

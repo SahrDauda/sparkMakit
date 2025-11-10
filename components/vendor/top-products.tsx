@@ -1,27 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { products as allProducts } from "@/lib/mock-data"
 
 const topProducts = [
   {
-    id: 1,
-    name: "Kente Cloth Runner",
+    ...allProducts[0],
     sales: 45,
-    revenue: "$4,049.55",
-    image: "/kente-cloth-colorful-african-textile.jpg",
+    revenue: "$3,599.55",
   },
   {
-    id: 2,
-    name: "Mudcloth Pillow Cover",
+    ...allProducts[1],
     sales: 38,
-    revenue: "$1,596.00",
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
+    revenue: "$3,382.00",
   },
   {
-    id: 3,
-    name: "Batik Wall Hanging",
+    ...allProducts[4],
     sales: 29,
-    revenue: "$2,755.00",
-    image: "/african-textiles-colorful-fabrics-patterns.jpg",
+    revenue: "$869.71",
   },
 ]
 

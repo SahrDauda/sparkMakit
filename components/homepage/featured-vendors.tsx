@@ -2,49 +2,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MapPin, Star } from "lucide-react"
-
-const vendors = [
-  {
-    id: 1,
-    name: "Adinkra Crafts",
-    location: "Accra, Ghana",
-    rating: 4.9,
-    reviews: 234,
-    products: 45,
-    image: "/african-craft-shop-logo-adinkra-symbols.jpg",
-    verified: true,
-  },
-  {
-    id: 2,
-    name: "Sahara Textiles",
-    location: "Lagos, Nigeria",
-    rating: 4.8,
-    reviews: 189,
-    products: 78,
-    image: "/african-textile-shop-colorful-fabrics.jpg",
-    verified: true,
-  },
-  {
-    id: 3,
-    name: "Maasai Beadwork",
-    location: "Nairobi, Kenya",
-    rating: 5.0,
-    reviews: 156,
-    products: 32,
-    image: "/maasai-beaded-jewelry-colorful.jpg",
-    verified: true,
-  },
-  {
-    id: 4,
-    name: "Zulu Art Gallery",
-    location: "Cape Town, South Africa",
-    rating: 4.7,
-    reviews: 298,
-    products: 91,
-    image: "/african-art-gallery-sculptures.jpg",
-    verified: true,
-  },
-]
+import { vendors } from "@/lib/mock-data"
 
 export function FeaturedVendors() {
   return (
@@ -52,7 +10,7 @@ export function FeaturedVendors() {
       <div className="space-y-8">
         <div className="text-center space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold text-balance">Featured Vendors</h2>
-          <p className="text-muted-foreground text-lg">Meet our trusted artisans and sellers</p>
+          <p className="text-muted-foreground text-lg">Meet our trusted sellers</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

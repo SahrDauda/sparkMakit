@@ -3,92 +3,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Heart, ShoppingCart, Star } from "lucide-react"
-
-const products = [
-  {
-    id: 1,
-    name: "Kente Cloth Runner",
-    vendor: "Adinkra Crafts",
-    price: 89.99,
-    originalPrice: 120.0,
-    rating: 4.9,
-    reviews: 45,
-    image: "/kente-cloth-colorful-african-textile.jpg",
-    badge: "Bestseller",
-  },
-  {
-    id: 2,
-    name: "Maasai Beaded Necklace",
-    vendor: "Maasai Beadwork",
-    price: 45.0,
-    rating: 5.0,
-    reviews: 32,
-    image: "/maasai-beaded-necklace-colorful-traditional.jpg",
-    badge: "New",
-  },
-  {
-    id: 3,
-    name: "Wooden Giraffe Sculpture",
-    vendor: "Zulu Art Gallery",
-    price: 125.0,
-    rating: 4.8,
-    reviews: 28,
-    image: "/wooden-giraffe-sculpture-african-art.jpg",
-  },
-  {
-    id: 4,
-    name: "Ankara Print Dress",
-    vendor: "Sahara Textiles",
-    price: 75.0,
-    originalPrice: 95.0,
-    rating: 4.7,
-    reviews: 56,
-    image: "/ankara-print-dress-african-fashion-colorful.jpg",
-    badge: "Sale",
-  },
-  {
-    id: 5,
-    name: "Shea Butter Gift Set",
-    vendor: "Natural Beauty Co",
-    price: 35.0,
-    rating: 4.9,
-    reviews: 89,
-    image: "/placeholder.svg?height=400&width=400",
-    badge: "Bestseller",
-  },
-  {
-    id: 6,
-    name: "Mudcloth Pillow Cover",
-    vendor: "Adinkra Crafts",
-    price: 42.0,
-    rating: 4.8,
-    reviews: 67,
-    image: "/placeholder.svg?height=400&width=400",
-  },
-  {
-    id: 7,
-    name: "Brass Ashanti Stool",
-    vendor: "Zulu Art Gallery",
-    price: 180.0,
-    rating: 5.0,
-    reviews: 23,
-    image: "/placeholder.svg?height=400&width=400",
-    badge: "New",
-  },
-  {
-    id: 8,
-    name: "Woven Basket Set",
-    vendor: "Sahara Textiles",
-    price: 55.0,
-    originalPrice: 70.0,
-    rating: 4.6,
-    reviews: 41,
-    image: "/placeholder.svg?height=400&width=400",
-    badge: "Sale",
-  },
-]
+import { products } from "@/lib/mock-data"
 
 export function FeaturedProducts() {
+  // Take first 8 products for homepage
+  const featuredProducts = products.slice(0, 8)
+
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="space-y-8">
@@ -103,7 +23,7 @@ export function FeaturedProducts() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
+          {featuredProducts.map((product) => (
             <Card key={product.id} className="group overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative aspect-square overflow-hidden bg-muted">
                 <img

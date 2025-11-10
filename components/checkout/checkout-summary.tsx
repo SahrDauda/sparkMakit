@@ -1,37 +1,26 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { products } from "@/lib/mock-data"
 
 const cartItems = [
   {
-    id: 1,
-    name: "Kente Cloth Runner",
-    vendor: "Adinkra Crafts",
-    price: 89.99,
+    ...products[0],
     quantity: 1,
-    image: "/kente-cloth-colorful-african-textile.jpg",
   },
   {
-    id: 2,
-    name: "Maasai Beaded Necklace",
-    vendor: "Maasai Beadwork",
-    price: 45.0,
+    ...products[1],
     quantity: 2,
-    image: "/maasai-beaded-necklace-colorful-traditional.jpg",
   },
   {
-    id: 5,
-    name: "Shea Butter Gift Set",
-    vendor: "Natural Beauty Co",
-    price: 35.0,
+    ...products[4],
     quantity: 1,
-    image: "/african-beauty-products-natural-skincare.jpg",
   },
 ]
 
 export function CheckoutSummary() {
-  const subtotal = 204.99
+  const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)
   const shipping = 0
-  const tax = 16.4
+  const tax = subtotal * 0.08 // Assuming 8% tax rate
   const total = subtotal + shipping + tax
 
   return (

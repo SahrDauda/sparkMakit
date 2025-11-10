@@ -5,31 +5,20 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { X, Plus, Minus } from "lucide-react"
 import Link from "next/link"
+import { products } from "@/lib/mock-data"
 
 const initialCartItems = [
   {
-    id: 1,
-    name: "Kente Cloth Runner",
-    vendor: "Adinkra Crafts",
-    price: 89.99,
+    ...products[0],
     quantity: 1,
-    image: "/kente-cloth-colorful-african-textile.jpg",
   },
   {
-    id: 2,
-    name: "Maasai Beaded Necklace",
-    vendor: "Maasai Beadwork",
-    price: 45.0,
+    ...products[1],
     quantity: 2,
-    image: "/maasai-beaded-necklace-colorful-traditional.jpg",
   },
   {
-    id: 5,
-    name: "Shea Butter Gift Set",
-    vendor: "Natural Beauty Co",
-    price: 35.0,
+    ...products[4],
     quantity: 1,
-    image: "/african-beauty-products-natural-skincare.jpg",
   },
 ]
 
