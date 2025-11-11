@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Bell, LogOut, Menu, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,11 +26,17 @@ export function VendorHeader({ onMenuToggle }: VendorHeaderProps) {
             <Menu className="h-5 w-5" />
           </Button>
 
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">SM</span>
-          </div>
-          <div>
-            <h1 className="text-lg font-semibold">Vendor Portal</h1>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sparkmakit-NZdHGodJwxi4iNvawGDVw0F8XRzGmK.png"
+              alt="SparkMakit"
+              width={100}
+              height={32}
+              className="h-8 w-auto"
+            />
+          </Link>
+          <div className="hidden sm:block">
+            <p className="text-xs text-muted-foreground">Vendor Portal</p>
           </div>
         </div>
 

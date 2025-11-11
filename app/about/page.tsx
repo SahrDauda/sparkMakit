@@ -79,38 +79,41 @@ export default function AboutPage() {
 
         {/* Stats Section */}
         <section className="container mx-auto px-4 py-16">
-          <div className="md:grid md:grid-cols-3 gap-8 text-center">
-            {/* Mobile/Tablet Carousel */}
-            <div className="md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
-              <div className="flex gap-6 pb-4">
-                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
-                  <div className="text-4xl font-bold text-primary">10,000+</div>
-                  <div className="text-muted-foreground">Active Vendors</div>
-                </div>
-                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
-                  <div className="text-4xl font-bold text-primary">500K+</div>
-                  <div className="text-muted-foreground">Products Listed</div>
-                </div>
-                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
-                  <div className="text-4xl font-bold text-primary">2M+</div>
-                  <div className="text-muted-foreground">Happy Customers</div>
-                </div>
-              </div>
+          <div className="hidden md:grid md:grid-cols-3 gap-8 text-center bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-xl">
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">10,000+</div>
+              <div className="text-muted-foreground">Active Vendors</div>
             </div>
-            {/* Desktop Grid */}
-            <div className="hidden md:contents">
-              <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">10,000+</div>
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">500K+</div>
+              <div className="text-muted-foreground">Products Listed</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">2M+</div>
+              <div className="text-muted-foreground">Happy Customers</div>
+            </div>
+          </div>
+
+          {/* Mobile/Tablet Auto-Scrolling Carousel */}
+          <div className="md:hidden relative bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-xl overflow-hidden">
+            <div className="flex animate-scroll-stats gap-8">
+              <div className="flex-shrink-0 w-full text-center space-y-2">
+                <div className="text-4xl font-bold text-primary">10,000+</div>
                 <div className="text-muted-foreground">Active Vendors</div>
               </div>
-              <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">500K+</div>
+              <div className="flex-shrink-0 w-full text-center space-y-2">
+                <div className="text-4xl font-bold text-primary">500K+</div>
                 <div className="text-muted-foreground">Products Listed</div>
               </div>
-              <div className="space-y-2">
-                <div className="text-4xl md:text-5xl font-bold text-primary">2M+</div>
+              <div className="flex-shrink-0 w-full text-center space-y-2">
+                <div className="text-4xl font-bold text-primary">2M+</div>
                 <div className="text-muted-foreground">Happy Customers</div>
               </div>
+            </div>
+            <div className="flex justify-center gap-2 mt-4">
+              <div className="h-2 w-2 rounded-full bg-primary/30 animate-dot-pulse" style={{ animationDelay: "0s" }} />
+              <div className="h-2 w-2 rounded-full bg-primary/30 animate-dot-pulse" style={{ animationDelay: "3s" }} />
+              <div className="h-2 w-2 rounded-full bg-primary/30 animate-dot-pulse" style={{ animationDelay: "6s" }} />
             </div>
           </div>
         </section>

@@ -5,6 +5,7 @@ import { Search, ShoppingCart, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
+import Image from "next/image"
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -13,12 +14,15 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 text-foreground bg-foreground">
         <div className="flex h-16 items-center justify-between gap-4">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">S</span>
-            </div>
-            <span className="font-bold text-xl hidden sm:inline-block text-card">SparkMakit</span>
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sparkmakit-NZdHGodJwxi4iNvawGDVw0F8XRzGmK.png"
+              alt="SparkMakit"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Navigation Links */}

@@ -141,3 +141,40 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Adding auto-scroll animations for stats carousel */
+@keyframes scroll-stats {
+  0%,
+  33% {
+    transform: translateX(0);
+  }
+  35%,
+  68% {
+    transform: translateX(-100%);
+  }
+  70%,
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes dot-pulse {
+  0%,
+  33% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  35%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+.animate-scroll-stats {
+  animation: scroll-stats 9s ease-in-out infinite;
+}
+
+.animate-dot-pulse {
+  animation: dot-pulse 9s ease-in-out infinite;
+}

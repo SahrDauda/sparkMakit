@@ -36,8 +36,8 @@ export function VendorSidebar({ isMobileMenuOpen, onClose }: VendorSidebarProps)
         <div className="h-full overflow-y-auto">
           <div className="p-6 space-y-6">
             <div className="space-y-1">
-              <h2 className="text-lg font-semibold">Vendor Portal</h2>
-              <p className="text-sm text-muted-foreground">Manage your store</p>
+              
+              
             </div>
 
             <nav className="space-y-1">

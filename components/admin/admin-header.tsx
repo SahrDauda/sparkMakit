@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Bell, LogOut, Menu, Settings, Shield, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,12 +26,21 @@ export function AdminHeader({ onMenuToggle }: AdminHeaderProps) {
             <Menu className="h-5 w-5" />
           </Button>
 
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <Shield className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <div>
-            <h1 className="text-lg font-semibold">Admin Portal</h1>
-            <p className="text-xs text-muted-foreground hidden md:block">Platform Management</p>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sparkmakit-NZdHGodJwxi4iNvawGDVw0F8XRzGmK.png"
+              alt="SparkMakit"
+              width={100}
+              height={32}
+              className="h-8 w-auto"
+            />
+          </Link>
+          <div className="h-6 w-px bg-border hidden sm:block" />
+          <div className="hidden sm:flex items-center gap-2">
+            <div className="h-6 w-6 rounded bg-primary/10 flex items-center justify-center">
+              <Shield className="h-4 w-4 text-primary" />
+            </div>
+            <p className="text-xs text-muted-foreground">Admin Portal</p>
           </div>
         </div>
 
