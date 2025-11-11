@@ -3,15 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, Package, ShoppingCart, BarChart3, Settings, Store } from "lucide-react"
+import { LayoutDashboard, Package, BarChart3 } from "lucide-react"
 
 const navigation = [
   { name: "Dashboard", href: "/vendor/dashboard", icon: LayoutDashboard },
   { name: "Products", href: "/vendor/products", icon: Package },
-  { name: "Orders", href: "/vendor/orders", icon: ShoppingCart },
   { name: "Analytics", href: "/vendor/analytics", icon: BarChart3 },
-  { name: "Store Settings", href: "/vendor/settings", icon: Store },
-  { name: "Account", href: "/vendor/account", icon: Settings },
 ]
 
 interface VendorSidebarProps {
@@ -35,10 +32,7 @@ export function VendorSidebar({ isMobileMenuOpen, onClose }: VendorSidebarProps)
       >
         <div className="h-full overflow-y-auto">
           <div className="p-6 space-y-6">
-            <div className="space-y-1">
-              
-              
-            </div>
+            <div className="space-y-1"></div>
 
             <nav className="space-y-1">
               {navigation.map((item) => {

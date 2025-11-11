@@ -3,16 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, Users, Store, ShoppingCart, BarChart3, Settings, Shield } from "lucide-react"
+import { LayoutDashboard, Store, BarChart3 } from "lucide-react"
 
 const navigation = [
   { name: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
   { name: "Vendors", href: "/admin/vendors", icon: Store },
-  { name: "Users", href: "/admin/users", icon: Users },
-  { name: "Orders", href: "/admin/orders", icon: ShoppingCart },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
-  { name: "Platform Settings", href: "/admin/settings", icon: Settings },
-  { name: "Security", href: "/admin/security", icon: Shield },
 ]
 
 interface AdminSidebarProps {
