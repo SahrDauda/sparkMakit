@@ -28,7 +28,7 @@ export function VendorHeader({ onMenuToggle }: VendorHeaderProps) {
 
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sparkmakit-NZdHGodJwxi4iNvawGDVw0F8XRzGmK.png"
+              src="/images/design-mode/sparkmakit.png"
               alt="SparkMakit"
               width={100}
               height={32}

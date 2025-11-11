@@ -12,25 +12,25 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 text-foreground bg-foreground">
+      <div className="container mx-auto px-4 text-card bg-accent-foreground">
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sparkmakit-NZdHGodJwxi4iNvawGDVw0F8XRzGmK.png"
+              src="/images/design-mode/sparkmakit.png"
               alt="SparkMakit"
               width={120}
               height={40}
-              className="h-10 w-auto"
+              className="w-auto h-[70px] my-0 mx-[0]"
               priority
             />
           </Link>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/products" className="text-sm font-medium text-card hover:text-primary transition-colors">
+            <Link href="/products" className="text-sm font-medium hover:text-primary transition-colors text-accent">
               Products
             </Link>
-            <Link href="/about" className="text-sm font-medium text-card hover:text-primary transition-colors">
+            <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors text-accent">
               About Us
             </Link>
           </nav>
@@ -39,7 +39,7 @@ export function SiteHeader() {
           <div className="flex-1 max-w-xl hidden md:flex">
             <div className="relative w-full">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input type="search" placeholder="Search for products, vendors..." className="pl-10 w-full text-card" />
+              <Input type="search" placeholder="Search for products, vendors..." className="pl-10 w-full text-foreground" />
             </div>
           </div>
 
@@ -49,12 +49,12 @@ export function SiteHeader() {
               <Search className="h-5 w-5" />
             </Button>
             <Link href="/vendor/login" className="hidden lg:inline-block">
-              <Button variant="outline" size="sm" className="bg-card">
+              <Button variant="outline" size="sm" className="bg-foreground">
                 Vendor Login
               </Button>
             </Link>
             <Link href="/admin/login" className="hidden lg:inline-block">
-              <Button variant="outline" size="sm" className="bg-card">
+              <Button variant="outline" size="sm" className="bg-foreground">
                 Admin Login
               </Button>
             </Link>
