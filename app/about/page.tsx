@@ -11,9 +11,9 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-primary/10 via-background to-accent/10 py-16 md:py-24">
           <div className="container mx-auto px-4 text-center space-y-4">
-            <h1 className="text-4xl md:text-6xl font-bold text-balance">About AfriMarket</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-balance">About SparkMakit</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-              Connecting artisans and vendors with customers worldwide, building bridges through commerce and culture.
+              Connecting vendors with customers worldwide, building bridges through commerce and culture.
             </p>
           </div>
         </section>
@@ -24,9 +24,8 @@ export default function AboutPage() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Our Mission</h2>
               <p className="text-muted-foreground leading-relaxed">
-                AfriMarket was founded with a simple yet powerful vision: to create a global marketplace that empowers
-                vendors and artisans to reach customers worldwide while preserving cultural authenticity and fair trade
-                practices.
+                SparkMakit was founded with a simple yet powerful vision: to create a global marketplace that empowers
+                vendors to reach customers worldwide while preserving cultural authenticity and fair trade practices.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 We believe in the power of e-commerce to transform lives, support local economies, and bring unique
@@ -80,18 +79,38 @@ export default function AboutPage() {
 
         {/* Stats Section */}
         <section className="container mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">10,000+</div>
-              <div className="text-muted-foreground">Active Vendors</div>
+          <div className="md:grid md:grid-cols-3 gap-8 text-center">
+            {/* Mobile/Tablet Carousel */}
+            <div className="md:hidden overflow-x-auto snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
+              <div className="flex gap-6 pb-4">
+                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
+                  <div className="text-4xl font-bold text-primary">10,000+</div>
+                  <div className="text-muted-foreground">Active Vendors</div>
+                </div>
+                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
+                  <div className="text-4xl font-bold text-primary">500K+</div>
+                  <div className="text-muted-foreground">Products Listed</div>
+                </div>
+                <div className="flex-shrink-0 w-[280px] snap-center space-y-2 bg-card p-6 rounded-lg border">
+                  <div className="text-4xl font-bold text-primary">2M+</div>
+                  <div className="text-muted-foreground">Happy Customers</div>
+                </div>
+              </div>
             </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">500K+</div>
-              <div className="text-muted-foreground">Products Listed</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">2M+</div>
-              <div className="text-muted-foreground">Happy Customers</div>
+            {/* Desktop Grid */}
+            <div className="hidden md:contents">
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary">10,000+</div>
+                <div className="text-muted-foreground">Active Vendors</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary">500K+</div>
+                <div className="text-muted-foreground">Products Listed</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary">2M+</div>
+                <div className="text-muted-foreground">Happy Customers</div>
+              </div>
             </div>
           </div>
         </section>

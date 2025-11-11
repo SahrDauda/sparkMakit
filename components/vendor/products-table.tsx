@@ -16,38 +16,40 @@ const products = allProducts.slice(0, 4).map((product, index) => ({
 
 export function ProductsTable() {
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <CardContent className="p-0">
-        <div className="overflow-x-auto">
-          <table className="w-full">
+        <div className="overflow-x-auto -mx-3 sm:mx-0">
+          <table className="w-full min-w-[640px]">
             <thead className="border-b bg-muted/50">
               <tr>
-                <th className="text-left p-4 font-semibold">Product</th>
-                <th className="text-left p-4 font-semibold">Price</th>
-                <th className="text-left p-4 font-semibold">Stock</th>
-                <th className="text-left p-4 font-semibold">Status</th>
-                <th className="text-left p-4 font-semibold">Sales</th>
-                <th className="text-right p-4 font-semibold">Actions</th>
+                <th className="text-left p-3 sm:p-4 font-semibold text-xs sm:text-sm">Product</th>
+                <th className="text-left p-3 sm:p-4 font-semibold text-xs sm:text-sm">Price</th>
+                <th className="text-left p-3 sm:p-4 font-semibold text-xs sm:text-sm">Stock</th>
+                <th className="text-left p-3 sm:p-4 font-semibold text-xs sm:text-sm">Status</th>
+                <th className="text-left p-3 sm:p-4 font-semibold text-xs sm:text-sm">Sales</th>
+                <th className="text-right p-3 sm:p-4 font-semibold text-xs sm:text-sm">Actions</th>
               </tr>
             </thead>
             <tbody>
               {products.map((product) => (
                 <tr key={product.id} className="border-b last:border-0 hover:bg-muted/50">
-                  <td className="p-4">
-                    <div className="flex items-center gap-3">
-                      <div className="h-12 w-12 rounded-lg overflow-hidden bg-muted flex-shrink-0">
+                  <td className="p-3 sm:p-4">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-lg overflow-hidden bg-muted flex-shrink-0">
                         <img
                           src={product.image || "/placeholder.svg"}
                           alt={product.name}
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <span className="font-medium">{product.name}</span>
+                      <span className="font-medium text-xs sm:text-sm truncate max-w-[120px] sm:max-w-none">
+                        {product.name}
+                      </span>
                     </div>
                   </td>
-                  <td className="p-4">${product.price.toFixed(2)}</td>
-                  <td className="p-4">{product.stock}</td>
-                  <td className="p-4">
+                  <td className="p-3 sm:p-4 text-xs sm:text-sm">NLe {product.price.toFixed(2)}</td>
+                  <td className="p-3 sm:p-4 text-xs sm:text-sm">{product.stock}</td>
+                  <td className="p-3 sm:p-4">
                     <Badge
                       variant={
                         product.status === "active"
@@ -56,22 +58,23 @@ export function ProductsTable() {
                             ? "secondary"
                             : "destructive"
                       }
+                      className="text-xs"
                     >
                       {product.status === "active" && "Active"}
                       {product.status === "low-stock" && "Low Stock"}
                       {product.status === "out-of-stock" && "Out of Stock"}
                     </Badge>
                   </td>
-                  <td className="p-4">{product.sales}</td>
-                  <td className="p-4">
-                    <div className="flex items-center justify-end gap-2">
-                      <Button variant="ghost" size="icon">
-                        <Edit className="h-4 w-4" />
+                  <td className="p-3 sm:p-4 text-xs sm:text-sm">{product.sales}</td>
+                  <td className="p-3 sm:p-4">
+                    <div className="flex items-center justify-end gap-1 sm:gap-2">
+                      <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9">
+                        <Edit className="h-3 w-3 sm:h-4 sm:w-4" />
                       </Button>
                       <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" size="icon">
-                            <MoreVertical className="h-4 w-4" />
+                          <Button variant="ghost" size="icon" className="h-8 w-8 sm:h-9 sm:w-9">
+                            <MoreVertical className="h-3 w-3 sm:h-4 sm:w-4" />
                           </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">

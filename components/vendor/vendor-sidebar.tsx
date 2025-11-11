@@ -3,9 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { LayoutDashboard, Package, ShoppingCart, BarChart3, Settings, Store, Menu, X } from "lucide-react"
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { LayoutDashboard, Package, ShoppingCart, BarChart3, Settings, Store } from "lucide-react"
 
 const navigation = [
   { name: "Dashboard", href: "/vendor/dashboard", icon: LayoutDashboard },
@@ -16,24 +14,17 @@ const navigation = [
   { name: "Account", href: "/vendor/account", icon: Settings },
 ]
 
-export function VendorSidebar() {
+interface VendorSidebarProps {
+  isMobileMenuOpen: boolean
+  onClose: () => void
+}
+
+export function VendorSidebar({ isMobileMenuOpen, onClose }: VendorSidebarProps) {
   const pathname = usePathname()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   return (
     <>
-      <Button
-        variant="ghost"
-        size="icon"
-        className="lg:hidden fixed left-4 top-20 z-50"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-      </Button>
-
-      {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/50 z-40 top-16" onClick={() => setIsMobileMenuOpen(false)} />
-      )}
+      {isMobileMenuOpen && <div className="lg:hidden fixed inset-0 bg-black/50 z-40 top-16" onClick={onClose} />}
 
       <aside
         className={cn(
@@ -56,7 +47,7 @@ export function VendorSidebar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={onClose}
                     className={cn(
                       "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                       isActive

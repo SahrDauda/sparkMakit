@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Bell, LogOut, User } from "lucide-react"
+import { Bell, LogOut, Menu, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -12,13 +12,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function VendorHeader() {
+interface VendorHeaderProps {
+  onMenuToggle?: () => void
+}
+
+export function VendorHeader({ onMenuToggle }: VendorHeaderProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex h-16 items-center justify-between px-6">
+      <div className="flex h-16 items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
+          <Button variant="ghost" size="icon" className="lg:hidden" onClick={onMenuToggle}>
+            <Menu className="h-5 w-5" />
+          </Button>
+
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">VM</span>
+            <span className="text-primary-foreground font-bold text-sm">SM</span>
           </div>
           <div>
             <h1 className="text-lg font-semibold">Vendor Portal</h1>
