@@ -10,9 +10,9 @@ export function SiteFooter() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">A</span>
+                <span className="text-primary-foreground font-bold text-lg">S</span>
               </div>
-              <span className="font-bold text-xl">AfriMarket</span>
+              <span className="font-bold text-xl">SparkMakit</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Connecting African artisans and vendors with customers worldwide.
@@ -133,7 +133,7 @@ export function SiteFooter() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} AfriMarket. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SparkMakit. All rights reserved.</p>
         </div>
       </div>
     </footer>

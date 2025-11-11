@@ -1,9 +1,14 @@
+"use client"
+
 import Link from "next/link"
-import { Search, ShoppingCart, Menu } from "lucide-react"
+import { Search, ShoppingCart, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useState } from "react"
 
 export function SiteHeader() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 text-foreground bg-foreground">
@@ -11,7 +16,7 @@ export function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">M</span>
+              <span className="text-primary-foreground font-bold text-lg">S</span>
             </div>
             <span className="font-bold text-xl hidden sm:inline-block text-card">SparkMakit</span>
           </Link>
@@ -58,8 +63,13 @@ export function SiteHeader() {
                 </span>
               </Button>
             </Link>
-            <Button variant="ghost" size="icon" className="md:hidden text-card bg-accent">
-              <Menu className="h-5 w-5" />
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden text-card bg-accent"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
@@ -72,6 +82,41 @@ export function SiteHeader() {
           </div>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden border-t bg-background">
+          <nav className="container mx-auto px-4 py-4 space-y-3">
+            <Link
+              href="/products"
+              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Products
+            </Link>
+            <Link
+              href="/about"
+              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/vendor/login"
+              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Vendor Login
+            </Link>
+            <Link
+              href="/admin/login"
+              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Admin Login
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }
