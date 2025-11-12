@@ -1,0 +1,554 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+# SparkMakit - Multi-Vendor E-Commerce Platform
+
+---
+
+## DOCUMENT INFORMATION
+
+**Product Name:** SparkMakit
+**Version:** 1.0
+**Document Date:** January 2025
+**Document Owner:** Product Management Team
+**Status:** Active Development
+**Classification:** Internal
+
+---
+
+## EXECUTIVE SUMMARY
+
+SparkMakit is a comprehensive multi-vendor e-commerce platform designed to connect vendors from Sierra Leone and the African continent with a global customer base. The platform enables small to medium-sized businesses to establish an online presence without the technical complexity or high costs typically associated with e-commerce operations.
+
+**Core Value Proposition:**
+- Vendors: Low-cost, easy-to-use platform to reach global markets
+- Customers: Access to authentic, quality products from verified sellers
+- Platform: Sustainable commission-based revenue model
+
+---
+
+## 1. COMPANY OVERVIEW
+
+### 1.1 Company Information
+
+**Company Name:** SparkMakit Technologies Ltd.
+**Founded:** 2024
+**Headquarters:** Freetown, Sierra Leone
+**Legal Structure:** Private Limited Company
+**Registration Number:** [To be assigned]
+
+### 1.2 Mission Statement
+
+"To empower African entrepreneurs and small businesses with digital tools that enable them to compete in the global marketplace, while providing customers worldwide with access to authentic, quality products."
+
+### 1.3 Vision Statement
+
+"To become the leading multi-vendor marketplace platform in West Africa by 2027, supporting 50,000+ vendors and facilitating $100M+ in annual transaction value."
+
+### 1.4 Core Values
+
+1. **Inclusivity:** Making e-commerce accessible to all, regardless of technical expertise
+2. **Trust:** Building a secure, transparent marketplace for all participants
+3. **Empowerment:** Providing tools and resources for vendors to grow their businesses
+4. **Innovation:** Continuously improving our platform based on user feedback
+5. **Integrity:** Maintaining fair policies and ethical business practices
+
+### 1.5 Company Objectives
+
+**2025 Goals:**
+- Onboard 500+ verified vendors
+- Achieve 10,000+ active customers
+- Process $2M+ in transactions
+- Establish presence in 5 Sierra Leone cities
+- Launch mobile application (iOS and Android)
+
+**2026 Goals:**
+- Expand to 5,000+ vendors
+- Reach 100,000+ active customers
+- Process $20M+ in transactions
+- Expand operations to 3 additional West African countries
+- Introduce seller financing program
+
+**2027 Goals:**
+- Scale to 50,000+ vendors
+- Achieve 1M+ active customers
+- Process $100M+ in transactions
+- Become profitable and self-sustaining
+- Launch B2B marketplace component
+
+---
+
+## 2. MARKET ANALYSIS
+
+### 2.1 Target Markets
+
+**Primary Market:**
+- Geographic: Sierra Leone, West Africa
+- Demographics: Age 18-45, urban and peri-urban residents
+- Psychographics: Tech-savvy, entrepreneurial, seeking convenience
+
+**Secondary Market:**
+- Sierra Leone diaspora globally
+- African diaspora interested in authentic products
+- International customers seeking unique African products
+
+### 2.2 Market Opportunity
+
+**Market Size:**
+- Sierra Leone e-commerce market: $50M (2024), projected $200M by 2027
+- West African e-commerce: $15B (2024), projected $75B by 2030
+- Global ethnic marketplace segment: $500B+
+
+**Market Gaps:**
+- Limited accessible e-commerce platforms for small vendors
+- High barriers to entry (technical, financial)
+- Lack of trust in online transactions
+- Poor user experience on existing platforms
+- Limited payment options for local markets
+
+### 2.3 Competitive Analysis
+
+**Direct Competitors:**
+- [Local competitor 1]: Limited vendor onboarding, poor UX
+- [Local competitor 2]: High fees, complex dashboard
+- [Regional player]: No local presence, poor customer service
+
+**Competitive Advantages:**
+1. **Lower Fees:** 5-10% commission vs. industry average of 15-20%
+2. **Local Focus:** Support in Krio, mobile-first design
+3. **Vendor Support:** Dedicated onboarding and training
+4. **Payment Flexibility:** Multiple local payment methods (Mobile Money, cash on delivery)
+5. **Community:** Building vendor and customer communities
+
+**Indirect Competitors:**
+- Social media marketplaces (Facebook, WhatsApp Business)
+- Physical markets and shops
+- International platforms (Amazon, eBay - high shipping costs)
+
+---
+
+## 3. PRODUCT OVERVIEW
+
+### 3.1 Product Description
+
+SparkMakit is a web-based multi-vendor e-commerce platform that provides:
+
+**For Customers:**
+- Browse products from multiple vendors in one place
+- Secure payment processing
+- Order tracking and customer support
+- Product reviews and ratings
+- Wishlist and saved items
+- Personalized recommendations
+
+**For Vendors:**
+- Easy-to-use dashboard for product management
+- Inventory tracking
+- Order management
+- Sales analytics
+- Marketing tools
+- Payment processing integration
+
+**For Administrators:**
+- Vendor approval and management
+- Platform analytics
+- User management
+- Transaction oversight
+- Content moderation
+
+### 3.2 Product Categories
+
+1. **Electronics & Gadgets**
+   - Mobile phones and accessories
+   - Computers and laptops
+   - Audio equipment
+   - Smart devices
+
+2. **Fashion & Apparel**
+   - Traditional African clothing
+   - Modern fashion
+   - Shoes and footwear
+   - Clothing accessories
+
+3. **Jewelry & Accessories**
+   - Traditional jewelry
+   - Modern accessories
+   - Watches
+   - Bags and purses
+
+4. **Home & Kitchen**
+   - Kitchen appliances
+   - Home decor
+   - Furniture
+   - Cookware
+
+5. **Sports & Fitness**
+   - Exercise equipment
+   - Sportswear
+   - Outdoor gear
+   - Fitness accessories
+
+6. **Beauty & Health**
+   - Natural beauty products
+   - Skincare
+   - Hair care
+   - Health supplements
+
+### 3.3 Key Features
+
+**Phase 1 (MVP - Launched):**
+- ✅ User registration and authentication
+- ✅ Product browsing and search
+- ✅ Shopping cart and checkout
+- ✅ Vendor registration and approval
+- ✅ Product management dashboard
+- ✅ Order management
+- ✅ Basic analytics
+- ✅ Responsive design (mobile, tablet, desktop)
+
+**Phase 2 (Q1-Q2 2025):**
+- 🔄 Mobile money integration (Orange Money, Afrimoney)
+- 🔄 SMS notifications
+- 🔄 Advanced search and filters
+- 🔄 Product recommendations
+- 🔄 Vendor ratings and reviews
+- 🔄 Promotional campaigns and coupons
+- 🔄 Multi-language support (English, Krio)
+
+**Phase 3 (Q3-Q4 2025):**
+- ⏳ Mobile applications (iOS, Android)
+- ⏳ Live chat support
+- ⏳ Seller financing program
+- ⏳ Advanced analytics and reporting
+- ⏳ API for third-party integrations
+- ⏳ Loyalty and rewards program
+- ⏳ B2B marketplace features
+
+---
+
+## 4. USER PERSONAS
+
+### 4.1 Customer Personas
+
+**Persona 1: Young Professional**
+- **Name:** Aminata, 28
+- **Location:** Freetown
+- **Occupation:** Banking Officer
+- **Tech Comfort:** High
+- **Income:** Middle class
+- **Goals:** 
+  - Find quality products quickly
+  - Compare prices from multiple vendors
+  - Shop conveniently from phone during breaks
+- **Pain Points:**
+  - Limited time to visit physical shops
+  - Uncertain about product quality online
+  - Wants reliable delivery
+
+**Persona 2: Diaspora Shopper**
+- **Name:** Mohamed, 35
+- **Location:** London, UK
+- **Occupation:** Healthcare Worker
+- **Tech Comfort:** High
+- **Income:** Upper-middle class
+- **Goals:**
+  - Send gifts to family in Sierra Leone
+  - Buy authentic African products
+  - Support local businesses
+- **Pain Points:**
+  - High international shipping costs on other platforms
+  - Difficulty finding authentic products
+  - Payment processing challenges
+
+**Persona 3: Student**
+- **Name:** Fatmata, 22
+- **Location:** Bo
+- **Occupation:** University Student
+- **Tech Comfort:** Medium-High
+- **Income:** Low (student budget)
+- **Goals:**
+  - Find affordable products
+  - Shop for essentials online
+  - Discover new vendors and products
+- **Pain Points:**
+  - Limited budget
+  - Needs flexible payment options
+  - Concerned about product authenticity
+
+### 4.2 Vendor Personas
+
+**Persona 1: Established Shop Owner**
+- **Name:** Ibrahim, 45
+- **Business:** Electronics shop (10 years)
+- **Location:** Freetown
+- **Tech Comfort:** Medium
+- **Goals:**
+  - Expand customer base beyond physical location
+  - Increase sales revenue
+  - Modernize business operations
+- **Pain Points:**
+  - Limited technical knowledge
+  - Concerns about online payment security
+  - Needs help with product photography and descriptions
+
+**Persona 2: Young Entrepreneur**
+- **Name:** Mariama, 26
+- **Business:** Fashion boutique (1 year)
+- **Location:** Kenema
+- **Tech Comfort:** High
+- **Goals:**
+  - Build brand presence online
+  - Reach customers nationwide
+  - Scale business quickly
+- **Pain Points:**
+  - Limited capital for advertising
+  - Competition from established vendors
+  - Needs affordable e-commerce solution
+
+**Persona 3: Artisan/Craftsperson**
+- **Name:** Abu, 52
+- **Business:** Traditional jewelry maker (20 years)
+- **Location:** Makeni
+- **Tech Comfort:** Low
+- **Goals:**
+  - Preserve traditional craft while reaching modern customers
+  - Educate customers about authentic products
+  - Generate sustainable income
+- **Pain Points:**
+  - Very limited tech knowledge
+  - Difficulty taking quality product photos
+  - Needs significant onboarding support
+
+---
+
+## 5. FUNCTIONAL REQUIREMENTS
+
+### 5.1 Customer Features
+
+**FR-C1: User Registration & Authentication**
+- Email/password registration
+- Social media login (Google, Facebook)
+- Email verification
+- Password recovery
+- Profile management
+
+**FR-C2: Product Discovery**
+- Homepage with featured products and categories
+- Advanced search with filters (category, price, vendor, location)
+- Product sorting (newest, price, popularity, rating)
+- Category browsing
+- Vendor store pages
+
+**FR-C3: Product Details**
+- High-quality product images with zoom
+- Detailed descriptions and specifications
+- Price and stock availability
+- Vendor information
+- Customer reviews and ratings
+- Related products
+- Add to cart/wishlist
+
+**FR-C4: Shopping Cart**
+- Add/remove items
+- Quantity adjustment
+- Real-time price calculation
+- Promo code application
+- Save cart for later
+
+**FR-C5: Checkout Process**
+- Guest checkout option
+- Shipping address management
+- Multiple shipping methods
+- Payment method selection
+- Order review before confirmation
+
+**FR-C6: Order Management**
+- Order history
+- Order tracking
+- Order details and receipts
+- Reorder functionality
+- Cancel/return requests
+
+**FR-C7: Account Management**
+- Profile information
+- Address book
+- Payment methods
+- Order history
+- Wishlist
+- Notifications preferences
+
+### 5.2 Vendor Features
+
+**FR-V1: Vendor Registration**
+- Multi-step application form
+- Business information collection
+- Document upload (license, ID, tax cert)
+- Application status tracking
+- Admin approval workflow
+
+**FR-V2: Vendor Dashboard**
+- Sales overview (revenue, orders, products)
+- Key performance metrics
+- Sales charts and graphs
+- Recent orders
+- Top products
+- Quick actions
+
+**FR-V3: Product Management**
+- Add new products with images
+- Edit product details
+- Delete products
+- Bulk product upload (CSV)
+- Product variants (size, color)
+- Inventory tracking
+- Product status (active/inactive)
+
+**FR-V4: Order Management**
+- Order notifications
+- Order details view
+- Order status updates
+- Shipping information input
+- Bulk order processing
+- Order filtering and search
+
+**FR-V5: Analytics**
+- Revenue trends
+- Sales by product
+- Customer insights
+- Geographic distribution
+- Conversion rates
+- Performance benchmarks
+
+**FR-V6: Store Management**
+- Store profile customization
+- Logo and banner upload
+- Store description
+- Contact information
+- Business hours
+
+### 5.3 Admin Features
+
+**FR-A1: Vendor Management**
+- Vendor application review
+- Vendor approval/rejection
+- Vendor status management (active, suspended)
+- Vendor performance monitoring
+- Vendor communication
+
+**FR-A2: Product Moderation**
+- Product approval workflow
+- Flagged product review
+- Product quality monitoring
+- Category management
+
+**FR-A3: User Management**
+- Customer account management
+- User activity monitoring
+- Account suspension/deletion
+- User support ticket management
+
+**FR-A4: Platform Analytics**
+- Overall revenue and sales
+- Vendor performance metrics
+- Customer behavior analytics
+- Transaction monitoring
+- Platform health metrics
+
+**FR-A5: Content Management**
+- Homepage banner management
+- Featured products/vendors selection
+- Category management
+- Promotional campaign setup
+
+**FR-A6: Settings & Configuration**
+- Payment gateway configuration
+- Shipping methods and rates
+- Commission rate management
+- Platform policies
+- Email templates
+- System settings
+
+---
+
+## 6. NON-FUNCTIONAL REQUIREMENTS
+
+### 6.1 Performance
+
+- **Page Load Time:** < 3 seconds on 3G connection
+- **Response Time:** < 1 second for user interactions
+- **Image Optimization:** Compressed, lazy-loaded images
+- **Concurrent Users:** Support 10,000+ simultaneous users
+- **Database Queries:** < 100ms average query time
+
+### 6.2 Security
+
+- **Data Encryption:** SSL/TLS for all data transmission
+- **Password Security:** Bcrypt hashing with salt
+- **Authentication:** JWT tokens with refresh mechanism
+- **Payment Security:** PCI DSS compliance
+- **Data Privacy:** GDPR-compliant data handling
+- **Regular Backups:** Daily automated backups
+- **Security Audits:** Quarterly penetration testing
+
+### 6.3 Scalability
+
+- **Horizontal Scaling:** Support for load-balanced servers
+- **Database Scaling:** MongoDB sharding capability
+- **CDN Integration:** Static assets served via CDN
+- **Microservices Ready:** Modular architecture for future scaling
+
+### 6.4 Usability
+
+- **Mobile-First Design:** Optimized for mobile devices
+- **Accessibility:** WCAG 2.1 Level AA compliance
+- **Browser Support:** Latest 2 versions of Chrome, Firefox, Safari, Edge
+- **Internationalization:** Support for multiple languages
+- **Intuitive UI:** Maximum 3 clicks to any action
+
+### 6.5 Reliability
+
+- **Uptime:** 99.9% availability
+- **Data Backup:** Daily backups with 30-day retention
+- **Disaster Recovery:** Recovery Time Objective (RTO) < 4 hours
+- **Error Handling:** Graceful error messages and recovery
+
+### 6.6 Maintainability
+
+- **Code Documentation:** Comprehensive inline and external documentation
+- **Modular Architecture:** Clean separation of concerns
+- **Testing:** 80%+ code coverage with automated tests
+- **Logging:** Comprehensive application and error logging
+- **Monitoring:** Real-time performance monitoring
+
+---
+
+## 7. TECHNICAL ARCHITECTURE
+
+### 7.1 Technology Stack
+
+**Frontend:**
+- **Framework:** Next.js 16 (React 19)
+- **Styling:** Tailwind CSS v4
+- **State Management:** Zustand
+- **UI Components:** Shadcn/ui
+- **Animations:** Framer Motion
+- **HTTP Client:** Fetch API
+- **Form Handling:** React Hook Form
+- **Data Visualization:** Recharts
+
+**Backend (Planned):**
+- **Runtime:** Node.js 20+
+- **Framework:** Express.js
+- **Database:** MongoDB 7.0
+- **ODM:** Mongoose
+- **Authentication:** JWT + Passport.js
+- **File Storage:** AWS S3 / Cloudinary
+- **Email Service:** SendGrid / AWS SES
+- **SMS Service:** Africa's Talking / Twilio
+
+**DevOps:**
+- **Hosting:** Vercel (Frontend), AWS EC2/DigitalOcean (Backend)
+- **Database Hosting:** MongoDB Atlas
+- **CI/CD:** GitHub Actions
+- **Monitoring:** Vercel Analytics, Sentry
+- **Version Control:** Git + GitHub
+
+### 7.2 System Architecture

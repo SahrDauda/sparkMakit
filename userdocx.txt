@@ -1,0 +1,659 @@
+# SPARKMAKIT USER DOCUMENTATION
+# Multi-Vendor E-Commerce Platform
+
+---
+
+## WELCOME TO SPARKMAKIT! 🛍️
+
+SparkMakit is your online marketplace where you can buy products from different vendors all in one place. Think of it like a big shopping mall on your phone or computer - instead of going to different shops, everything is here!
+
+This guide will show you how to use SparkMakit whether you're:
+- A CUSTOMER who wants to buy products
+- A VENDOR who wants to sell products
+
+---
+
+## FOR CUSTOMERS: HOW TO BUY PRODUCTS
+
+### STEP 1: GETTING STARTED
+
+**Visit the Website:**
+1. Open your web browser (Chrome, Safari, or Firefox)
+2. Type in the SparkMakit website address
+3. You'll see the homepage with a big picture showing different products
+
+**Understanding the Homepage:**
+- **Top Menu Bar:** This is at the very top with the SparkMakit logo
+  - Click "Home" to go back to the main page
+  - Click "Products" to see all products
+  - Click "About Us" to learn about SparkMakit
+  - You'll see a shopping cart icon (🛒) - this shows your items
+  - You'll see a person icon (👤) - click this to login
+
+**The Main Picture Area (Hero Section):**
+- You'll see big beautiful pictures that change automatically
+- There's a "Start Shopping" button - click it to see all products
+- There's a "Become a Vendor" button - click this if you want to sell products
+
+### STEP 2: BROWSING PRODUCTS
+
+**Looking at Product Categories:**
+
+As you scroll down the homepage, you'll see different sections:
+
+1. **ELECTRONICS & GADGETS**
+   - Headphones, phones, computers, speakers
+   - Swipe left/right on your phone to see more items
+
+2. **HOME & KITCHEN**
+   - Water bottles, coffee mugs, candles, kitchen tools
+   - Swipe to see more products
+
+3. **SPORTS & FITNESS**
+   - Yoga mats, running shoes, fitness watches
+   - Swipe through the products
+
+4. **FASHION & APPAREL**
+   - Shirts, dresses, jackets, pants
+   - Keep swiping to see everything
+
+5. **ACCESSORIES**
+   - Bags, belts, wallets, sunglasses
+   - More items to browse through
+
+6. **JEWELRY**
+   - Necklaces, earrings, bracelets, rings
+   - Beautiful items to choose from
+
+**How to Swipe:**
+- On your phone: Touch the product and drag left or right
+- On computer: Use the arrows on the sides or scroll sideways with your mouse
+
+### STEP 3: VIEWING ALL PRODUCTS
+
+**Click "Products" at the top menu or click "Start Shopping"**
+
+You'll now see a page with ALL products displayed in a grid:
+
+**On Your Phone:**
+- At the top, you'll see dropdown menus:
+  - **Categories** - Click to choose: Electronics, Fashion, Jewelry, etc.
+  - **Price Range** - Set how much you want to spend
+  - **Country** - Filter by where products come from
+- These filters stay at the top even when you scroll down
+
+**On Computer:**
+- The filters are on the left side of the screen
+- Check the boxes next to what you want
+- Use the slider to set your price range
+
+**How to Filter Products:**
+1. Click "Categories" dropdown
+2. Select the category you want (e.g., "Fashion")
+3. Products will automatically update to show only Fashion items
+4. You can choose multiple filters at once
+
+### STEP 4: VIEWING A PRODUCT
+
+**Click on any product card to see full details**
+
+**Product Details Page Shows:**
+
+**LEFT SIDE:**
+- Big product picture
+- Small pictures at the bottom - click any to see it larger
+- Click the main picture to zoom in
+
+**RIGHT SIDE:**
+- Product name (what it's called)
+- Price in NLe (New Leone - Sierra Leone currency)
+- Star rating (how other customers rated it)
+- Number of reviews
+- Vendor name (who's selling it)
+- Stock availability (how many are left)
+
+**Product Options:**
+- **Size/Color Selection:** Click the button for your size or color
+- **Quantity:** Click + or - to choose how many you want
+- **Add to Cart Button:** The big blue button - click this to add the item
+- **Wishlist Heart:** Click the heart icon to save for later
+
+**More Information Tabs:**
+- **Description:** What the product is all about
+- **Specifications:** Technical details
+- **Reviews:** What other customers are saying
+- **Shipping:** How it will be delivered
+- **Care Instructions:** How to maintain the product
+
+**Vendor Information Box:**
+- Shows the store selling this product
+- Their rating and number of reviews
+- When they joined SparkMakit
+- "View Store" button - click to see all their products
+
+**Related Products:**
+- At the bottom, you'll see similar products
+- Swipe through these for more options
+
+### STEP 5: ADDING TO CART
+
+**After clicking "Add to Cart":**
+1. The cart icon (🛒) at the top will show a number
+2. This number tells you how many items are in your cart
+3. Click the cart icon anytime to see what you've added
+
+### STEP 6: VIEWING YOUR CART
+
+**Click the cart icon (🛒) at the top**
+
+**On the Cart Page:**
+
+**LEFT SIDE (or top on phone):**
+- All products you added
+- Each product shows:
+  - Picture
+  - Name
+  - Price per item
+  - Quantity (you can change this with + and -)
+  - Total price for that item
+  - X button to remove item
+
+**RIGHT SIDE (or bottom on phone):**
+- **Order Summary:**
+  - Subtotal (all items added together)
+  - Shipping cost
+  - **Total Amount** (what you'll pay)
+- **Promo Code Box:** If you have a discount code, enter it here
+- **"Proceed to Checkout" Button:** Click this to buy
+
+### STEP 7: CHECKOUT (PAYING FOR YOUR ITEMS)
+
+**After clicking "Proceed to Checkout":**
+
+The checkout page has 3 steps:
+
+**STEP 1: YOUR INFORMATION**
+- Enter your name
+- Enter your email address (so we can send updates)
+- Enter your phone number
+
+**STEP 2: DELIVERY ADDRESS**
+- Street address (where you live)
+- City
+- State/Province
+- ZIP/Postal Code
+- Country
+
+**STEP 3: SHIPPING METHOD**
+Choose how you want your items delivered:
+- **Standard Shipping** (5-7 days) - Cheaper
+- **Express Shipping** (2-3 days) - Faster but costs more
+- **Overnight Delivery** (1 day) - Most expensive but quickest
+
+**STEP 4: PAYMENT METHOD**
+Choose how to pay:
+- **Credit/Debit Card**
+  - Enter card number
+  - Expiry date
+  - CVV (3 digits on back of card)
+  - Cardholder name
+  
+- **PayPal**
+  - Click PayPal button
+  - Login to your PayPal account
+  - Confirm payment
+
+**Review Your Order:**
+- Check everything is correct
+- See your total amount
+- Click "Place Order" button
+
+### STEP 8: ORDER CONFIRMATION
+
+**Success! You'll see:**
+- A green checkmark ✓
+- "Order Placed Successfully" message
+- Your order number (write this down!)
+- Confirmation sent to your email
+
+**What Happens Next:**
+1. The vendor will prepare your items
+2. You'll get an email when it ships
+3. You'll receive a tracking number
+4. Your items will arrive at your address
+
+---
+
+## FOR VENDORS: HOW TO SELL PRODUCTS
+
+### BECOMING A VENDOR
+
+**STEP 1: REGISTER AS A VENDOR**
+
+1. **Go to the Homepage**
+2. **Click "Become a Vendor"** button (in the big picture area)
+3. **Or click "Vendor Login"** at the top right, then click "Apply Now"
+
+**You'll See a Registration Form:**
+
+**SECTION 1: PERSONAL INFORMATION**
+- Full Name: Your complete name
+- Email Address: Your email (you'll use this to login)
+- Phone Number: Your contact number
+- Password: Create a strong password
+- Confirm Password: Type the same password again
+
+**SECTION 2: BUSINESS DETAILS**
+- Business Name: What you want to call your store
+- Business Type: Choose from dropdown (Individual, Partnership, Company)
+- Business Registration Number: If you have one
+- Tax ID Number: If applicable
+
+**SECTION 3: STORE INFORMATION**
+- Store Name: The name customers will see
+- Store Description: Tell customers about your store (what you sell, what makes you special)
+- Store Category: What type of products (Electronics, Fashion, etc.)
+- Business Address: Your physical location
+- City
+- State/Province
+- ZIP Code
+- Country
+
+**SECTION 4: DOCUMENTS (Upload Pictures)**
+- Business License: Take a photo of your business license
+- Tax Certificate: Upload your tax documents
+- ID/Passport: Upload a picture of your ID
+
+**Click "Submit Application"**
+
+**What Happens Next:**
+- Our team will review your application
+- This usually takes 2-3 business days
+- You'll get an email when approved
+- Then you can login to your vendor portal
+
+### STEP 2: LOGGING INTO VENDOR PORTAL
+
+**After Your Application is Approved:**
+
+1. **Click "Vendor Login"** at the top of the website
+2. **Enter Your Email**
+3. **Enter Your Password**
+4. **Click "Login"**
+
+**You'll See Your Vendor Dashboard!**
+
+### STEP 3: UNDERSTANDING YOUR VENDOR DASHBOARD
+
+**On Your Phone:**
+- Click the three lines (☰) at the top left to open the menu
+
+**On Computer:**
+- The menu is already open on the left side
+
+**MENU OPTIONS:**
+
+**📊 Dashboard** (Main Page)
+- See your important numbers:
+  - Total Products: How many products you're selling
+  - Total Sales: How much money you've made
+  - Pending Orders: Orders waiting to be processed
+  - Total Revenue: All money earned
+
+- **Sales Graph:** Shows your sales over time
+  - You can see daily, weekly, or monthly sales
+  - The graph goes up when you make more sales!
+
+- **Recent Orders:** Shows the latest orders from customers
+- **Top Products:** Your best-selling items
+
+**📦 Products** (Manage Your Products)
+- See all products you're selling
+- Add new products
+- Edit existing products
+- Remove products
+
+**📊 Analytics** (See Your Performance)
+- Revenue trends: How much you're making over time
+- Popular products: What customers buy most
+- Customer insights: Where your customers are from
+- Performance metrics: How well you're doing
+
+### STEP 4: ADDING A NEW PRODUCT
+
+**From the Dashboard or Products Page:**
+
+1. **Click "Add Product"** button (usually at the top right)
+2. **A Form Will Appear (Modal/Pop-up)**
+
+**FILL IN THE PRODUCT INFORMATION:**
+
+**Basic Information:**
+- **Product Name:** What you're selling (e.g., "Wireless Headphones")
+- **Category:** Choose from dropdown (Electronics, Fashion, etc.)
+- **Description:** Explain what the product is
+  - What it does
+  - What makes it special
+  - Why customers should buy it
+
+**Pricing:**
+- **Price:** How much it costs in NLe (New Leone)
+- **Compare At Price:** If it was more expensive before (for showing discounts)
+
+**Inventory:**
+- **Stock Quantity:** How many you have to sell
+- **SKU:** Product code (optional - you can create your own system)
+
+**Images:**
+- **Upload Pictures:** Click to add photos of your product
+  - Take clear, bright photos
+  - Show the product from different angles
+  - First photo will be the main picture customers see
+
+**Shipping:**
+- **Weight:** How heavy the product is
+- **Dimensions:** Size (length, width, height)
+
+**Product Variants (if applicable):**
+- If your product comes in different sizes or colors
+- Click "Add Variant"
+- Enter size (S, M, L) or color options
+
+**Click "Save" or "Add Product"**
+
+**Your product is now live!** Customers can see it and buy it!
+
+### STEP 5: MANAGING YOUR PRODUCTS
+
+**Go to "Products" in Your Menu:**
+
+You'll see a table with all your products:
+
+**Each Product Shows:**
+- Picture
+- Product Name
+- Price
+- Stock (how many left)
+- Status (Active or Inactive)
+
+**What You Can Do:**
+
+**Edit a Product:**
+1. Click the pencil/edit icon
+2. Change any information
+3. Click "Save Changes"
+
+**Delete a Product:**
+1. Click the trash/delete icon
+2. Confirm you want to delete
+3. Product is removed
+
+**View Product:**
+- Click the eye icon to see how customers see it
+
+**Make Product Active/Inactive:**
+- Toggle the switch to turn it on/off
+- Off means customers can't see it
+- Useful when you're out of stock
+
+### STEP 6: VIEWING ANALYTICS
+
+**Click "Analytics" in Your Menu:**
+
+**You'll See:**
+
+**Revenue Tracking:**
+- Graph showing money earned over time
+- Can view by day, week, month, or year
+- Total revenue number at the top
+
+**Performance Metrics:**
+- Top selling products
+- Total orders
+- Average order value
+- Conversion rate (how many visitors buy)
+
+**Customer Insights:**
+- Where customers are from
+- What times they shop most
+- What categories they prefer
+
+**Product Performance:**
+- Which products sell best
+- Which need promotion
+- Which are slow sellers
+
+**How This Helps You:**
+- Know what's selling well (stock up on these!)
+- Know what's not selling (maybe lower the price or improve the listing)
+- Understand your customers better
+- Plan your inventory
+
+### STEP 7: BEST PRACTICES FOR VENDORS
+
+**TO BE SUCCESSFUL ON SPARKMAKIT:**
+
+**1. Take Great Product Photos:**
+- Use good lighting (natural daylight is best)
+- Clean background (white or neutral colors)
+- Show product from multiple angles
+- Include size reference if needed
+
+**2. Write Clear Descriptions:**
+- Explain exactly what the product is
+- List all features and benefits
+- Be honest about any limitations
+- Use simple language
+
+**3. Price Fairly:**
+- Research similar products
+- Don't price too high (customers will skip)
+- Don't price too low (you need to make profit)
+- Consider your costs and desired profit margin
+
+**4. Keep Stock Updated:**
+- Update quantities when items sell out
+- Mark out-of-stock items as inactive
+- Restock popular items quickly
+
+**5. Respond to Orders Quickly:**
+- Check for new orders daily
+- Process orders within 24 hours
+- Communicate with customers if there are delays
+
+**6. Maintain Good Ratings:**
+- Provide accurate descriptions
+- Ship items on time
+- Package items safely
+- Provide good customer service
+
+---
+
+## FOR EVERYONE: GENERAL TIPS
+
+### USING THE WEBSITE ON YOUR PHONE
+
+**Navigation:**
+- Use the hamburger menu (☰) to see all pages
+- Swipe left/right to see product carousels
+- Tap images to see them bigger
+- Scroll down to see more content
+
+**Filters:**
+- They appear as dropdowns at the top
+- They stay visible when you scroll
+- Tap to open, select your choice, tap outside to close
+
+### USING THE WEBSITE ON COMPUTER
+
+**Navigation:**
+- Click menu items at the top
+- Use your mouse to hover and see more options
+- Sidebar menus stay open on vendor/admin portals
+
+**Filters:**
+- Appear on the left side
+- Click checkboxes to filter
+- Use sliders for price ranges
+
+### UNDERSTANDING PRICES
+
+- All prices are in **NLe (New Leone)**
+- This is Sierra Leone's official currency
+- Prices include what the vendor charges
+- Shipping costs are added at checkout
+- You'll see the full total before paying
+
+### GETTING HELP
+
+**If You Need Support:**
+
+**For Customers:**
+- Check the FAQ section on the website
+- Email: support@sparkmakit.com
+- Call: [Phone number here]
+- Live chat (if available on the website)
+
+**For Vendors:**
+- Vendor support email: vendors@sparkmakit.com
+- Check vendor resources section
+- Contact your account manager
+
+### SAFETY TIPS
+
+**For Customers:**
+- Only enter payment information on the secure checkout page
+- Never share your password with anyone
+- Check vendor ratings before buying
+- Save your order confirmation emails
+
+**For Vendors:**
+- Keep your login credentials private
+- Regularly update your password
+- Only sell genuine products
+- Respond professionally to customers
+- Report any suspicious activity
+
+---
+
+## ABOUT SPARKMAKIT
+
+**Our Mission:**
+SparkMakit connects vendors and customers worldwide, making it easy for anyone to buy and sell products online. We believe in supporting local businesses while providing customers with quality products and great shopping experiences.
+
+**Why Choose SparkMakit:**
+- Wide variety of products from verified vendors
+- Secure payment processing
+- Easy-to-use platform
+- Responsive customer support
+- Fair policies for vendors and customers
+
+---
+
+## QUICK REFERENCE
+
+**CUSTOMER QUICK STEPS:**
+1. Visit website → Browse products
+2. Click product → View details
+3. Add to cart → Go to cart
+4. Checkout → Enter information
+5. Pay → Wait for delivery
+
+**VENDOR QUICK STEPS:**
+1. Apply to become vendor
+2. Wait for approval (2-3 days)
+3. Login to vendor portal
+4. Add products with photos and descriptions
+5. Manage orders and inventory
+6. Grow your business!
+
+---
+
+## GLOSSARY (IMPORTANT WORDS)
+
+- **Cart:** Your shopping basket where items you want to buy are stored
+- **Checkout:** The process of paying for your items
+- **Dashboard:** Your main control page (for vendors)
+- **Filter:** Tool to narrow down products by category, price, etc.
+- **Inventory:** The stock/quantity of products available
+- **Modal:** A pop-up window on the screen
+- **NLe:** New Leone - Sierra Leone's currency
+- **Portal:** Special area for vendors/admins to manage their activities
+- **SKU:** Stock Keeping Unit - unique code for a product
+- **Vendor:** A seller/business owner who sells products on SparkMakit
+- **Wishlist:** Saved products you might want to buy later
+
+---
+
+## FREQUENTLY ASKED QUESTIONS (FAQ)
+
+**FOR CUSTOMERS:**
+
+**Q: How do I create an account?**
+A: Click the person icon (👤) at the top, then click "Register". Fill in your details.
+
+**Q: What payment methods do you accept?**
+A: We accept credit/debit cards and PayPal.
+
+**Q: How long does delivery take?**
+A: Standard shipping is 5-7 days, Express is 2-3 days, Overnight is 1 day.
+
+**Q: Can I return a product?**
+A: Yes, you have 30 days to return products. Check our returns policy in the footer.
+
+**Q: How do I track my order?**
+A: After your order ships, you'll receive a tracking number via email.
+
+**Q: What if I forget my password?**
+A: Click "Forgot Password" on the login page and follow the instructions.
+
+**FOR VENDORS:**
+
+**Q: How much does it cost to sell on SparkMakit?**
+A: [Insert fee structure - commission per sale, monthly fee, etc.]
+
+**Q: How long does vendor approval take?**
+A: Usually 2-3 business days after submitting all required documents.
+
+**Q: When do I get paid?**
+A: Payments are processed [weekly/monthly] to your registered account.
+
+**Q: Can I sell internationally?**
+A: Yes, you can ship to any country you choose.
+
+**Q: What if a customer wants to return a product?**
+A: Follow SparkMakit's return policy. We'll guide you through the process.
+
+**Q: How do I improve my sales?**
+A: Use quality photos, write detailed descriptions, price competitively, and maintain good ratings.
+
+---
+
+## NEED MORE HELP?
+
+**Contact Us:**
+- Email: help@sparkmakit.com
+- Phone: [Phone Number]
+- Address: [Physical Address]
+- Website: www.sparkmakit.com
+
+**Follow Us:**
+- Facebook: @SparkMakit
+- Instagram: @SparkMakit
+- Twitter: @SparkMakit
+
+**Business Hours:**
+Monday - Friday: 8:00 AM - 6:00 PM GMT
+Saturday: 9:00 AM - 3:00 PM GMT
+Sunday: Closed
+
+---
+
+**Thank you for choosing SparkMakit!**
+
+Whether you're shopping for great products or building your business, we're here to help you succeed. Happy shopping and selling!
+
+---
+
+*Last Updated: January 2025*
+*Version: 1.0*
