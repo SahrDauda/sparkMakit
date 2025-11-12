@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Search, ShoppingCart, Menu, X } from "lucide-react"
+import { Search, ShoppingCart, Menu, X, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
@@ -39,7 +39,11 @@ export function SiteHeader() {
           <div className="flex-1 max-w-xl hidden md:flex">
             <div className="relative w-full">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input type="search" placeholder="Search for products, vendors..." className="pl-10 w-full text-foreground" />
+              <Input
+                type="search"
+                placeholder="Search for products, vendors..."
+                className="pl-10 w-full text-foreground"
+              />
             </div>
           </div>
 
@@ -58,7 +62,11 @@ export function SiteHeader() {
                 Admin Login
               </Button>
             </Link>
-            <Link href="/login"></Link>
+            <Link href="/login">
+              <Button variant="ghost" size="icon" className="text-card bg-primary" title="Customer Login">
+                <User className="h-5 w-5" />
+              </Button>
+            </Link>
             <Link href="/cart">
               <Button variant="ghost" size="icon" className="relative text-card bg-primary">
                 <ShoppingCart className="h-5 w-5" />
@@ -117,6 +125,14 @@ export function SiteHeader() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Admin Login
+            </Link>
+            {/* Added customer login link for mobile menu */}
+            <Link
+              href="/login"
+              className="block text-sm font-medium hover:text-primary transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Customer Login
             </Link>
           </nav>
         </div>

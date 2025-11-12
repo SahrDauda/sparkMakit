@@ -74,13 +74,15 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-base bg-white/10 backdrop-blur text-white border-white/30 hover:bg-white/20"
-            >
-              Become a Vendor
-            </Button>
+            <Link href="/vendor/register">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-base w-full sm:w-auto bg-white/10 backdrop-blur text-white border-white/30 hover:bg-white/20"
+              >
+                Become a Vendor
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
