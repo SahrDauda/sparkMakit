@@ -119,13 +119,7 @@ export function SiteHeader() {
             >
               Vendor Login
             </Link>
-            <Link
-              href="/admin/login"
-              className="block text-sm font-medium hover:text-primary transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Admin Login
-            </Link>
+            
             {/* Added customer login link for mobile menu */}
             <Link
               href="/login"
